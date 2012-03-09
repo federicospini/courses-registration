@@ -15,7 +15,7 @@ var StudentSchema = new Schema ({
   name: String
 , surname: String
 , email: String
-, matriculation: String
+, id: String
 , gihub: String
 , courses: {
     cg: Boolean, 
