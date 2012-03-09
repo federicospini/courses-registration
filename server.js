@@ -48,6 +48,7 @@ server.configure('production', function(){
 
 server.post('/register', function (req, res) {
   var student = req.body.student;
+  student.courses = student.courses || {}; 
   student.courses.cg = !!student.courses.cg;
   student.courses.bio = !!student.courses.bio;
 
