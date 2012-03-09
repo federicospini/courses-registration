@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course subscription</title>
+  <link rel="stylesheet" href="./css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Computational Graphic and Biomedical Informatics</h1>
+  <div class="row">
+    <div class="span8">
+      <form class="form-horizontal" method="post" action="/register">
+        <fieldset>
+          <legend>Course subscription</legend>
+          <div class="control-group">
+            <label class="control-label" for="input01">Name</label>
+            <div class="controls">
+              <input type="text" required class="input-xlarge" id="input01" name="student[name]">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="input02">Surname</label>
+            <div class="controls">
+              <input type="text" required class="input-xlarge" id="input02" name="student[surname]">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="input03">e-mail</label>
+            <div class="controls">
+              <input type="text" type="email" required class="input-xlarge" id="input03" user="student[email]">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="input04" >Matriculation number</label>
+            <div class="controls">
+              <input type="text" required class="input-xlarge" id="input04" name="student[matriculation]">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="input04" >GitHub username</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" id="input04" name="student[github]">
+            </div>
+          </div>
+           <div class="control-group">
+            <label class="control-label" for="courses-selection">Courses</label>
+            <div class="controls">
+              <label class="checkbox inline" id="courses-selection">
+                <input type="checkbox" id="cg-checkbox" value="true" name="student[courses][cg]"/> Computational Graphic
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" id="bio-checkbox" value="true" name="student[courses][bio]"/> Biomedical Informatics
+              </label>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Register</button>
+            <button class="btn">Cancel</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<!-- <script src="./js/handlebars.js"></script> -->
+<!-- <script src="./js/main.js"></script> -->
+</body>
+</html>

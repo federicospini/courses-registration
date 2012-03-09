@@ -1,0 +1,24 @@
+{
+  "author": {
+    "name": "Federico Spini",
+    "email": "federico.spini@gmail.com",
+    "url": "http://spini.no.de"
+  },
+  "name": "formify",
+  "description": "Customizable forms saver",
+  "version": "0.0.0",
+  "homepage": "https://github.com/spini/formify",
+  "repository": {
+    "type": "git",
+    "url": "{{repository.url}}"
+  },
+  "main": "{{project.main}}",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+      "express": "2.5.8",
+      "mongoose": "2.5.6"
+  },
+  "devDependencies": {}
+}
