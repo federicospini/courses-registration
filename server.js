@@ -60,4 +60,18 @@ server.post('/register', function (req, res) {
   });
 });
 
+server.post('/api/register', function (req, res) {
+  var student = req.body.student;
+  student.courses = student.courses || {}; 
+  student.courses.cg = !!student.courses.cg;
+  student.courses.bio = !!student.courses.bio;
+
+  student = new Student(student);
+  
+  student.save(function (err) {
+    if (!err) res.send("SUCCESS");
+    else console.log(err);
+  });
+});
+
 console.log("Express server listening on port %d in %s mode", server.address().port, server.settings.env);
