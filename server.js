@@ -9,7 +9,7 @@ var Schema = mongoose.Schema;
 
 
 // DB Configuration
-var conn = mongoose.connect('mongodb://spinidb:zxcpoimongohq@staff.mongohq.com:10023/newsubscriptions');
+var conn = mongoose.connect('mongodb://spinidb:zxcpoimongohq@flame.mongohq.com:27108/newsubscriptions');
 
 var StudentSchema = new Schema ({
   name: String
