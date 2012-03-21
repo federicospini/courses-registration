@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -10,6 +9,7 @@ var Schema = mongoose.Schema;
 
 // DB Configuration
 var conn = mongoose.connect('mongodb://user:passwd@flame.mongohq.com:27108/newsubscriptions');
+
 
 var StudentSchema = new Schema ({
   name: String
